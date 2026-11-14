@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07090d">
+  <meta name="description" content="AOS BlackWeb: corporación tecnológica y RMA (SAT). Desarrollo digital, reparaciones y compraventa de terminales.">
+  <title>AOS BlackWeb — Tecnología, SAT y Market</title>
+  <link rel="icon" type="image/png" href="assets/images/aos-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/loader.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script src="js/loader.js" defer></script>
+  <script src="js/text-generator.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body class="is-loading">
+  <div class="boot-screen" id="bootScreen" aria-label="Cargando AOS BlackWeb">
+    <div class="boot-grid"></div>
+    <div class="boot-center">
+      <div class="boot-logo-wrap">
+        <img src="assets/images/aos-logo.png" class="boot-logo" alt="Logotipo AOS">
+      </div>
+      <div class="boot-brand">Aos<span>Techs</span></div>
+      <div class="boot-status" id="bootStatus">INITIALIZING CORPORATE SYSTEMS</div>
+      <div class="boot-progress"><span id="bootProgress"></span></div>
+      <div class="boot-meta"><span id="bootPercent">00%</span><span> AOS / SYSTEM BOOT</span></div>
+    </div>
+    <div class="boot-corner boot-corner-left">AOS BLACKWEB <span>BUILD 01.00</span></div>
+    <div class="boot-corner boot-corner-right">SECURE DIGITAL ENVIRONMENT</div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand-lockup" href="#home" aria-label="AOS BlackWeb, inicio">
+      <span class="brand-mark"><img src="assets/images/aos-logo.png" alt=""></span>
+      <span class="brand-name">AOS <b>BlackWeb</b><small>TECHNOLOGY · SERVICE · MARKET</small></span>
+    </a>
+    <nav class="top-nav" aria-label="Navegación principal">
+      <a href="#techs">AOS Techs</a>
+      <a href="#sat">AOS SAT</a>
+      <a href="#market">AOS Market</a>
+    </nav>
+    <a class="header-contact" href="#contact">CONTACTO <span>↗</span></a>
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  </header>
+
+  <main id="mainContent">
+    <section class="hero section-shell" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> CORPORATE TECHNOLOGY GROUP <span class="eyebrow-line"></span> ES / 01</div>
+        <h1 class="hero-title glitch-text" data-text="AOS BlackWeb">AOS BlackWeb</h1>
+        <p class="hero-description">Corporación tecnológica y RMA (SAT) especializada en desarrollo tecnológico, reparaciones y soluciones avanzadas y métodos de compra/venta de terminales.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#divisions">EXPLORAR DIVISIONES <span>↘</span></a>
+          <a class="button button-ghost" href="#contact">CONTACTAR CON AOS <span>↗</span></a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+        <div class="visual-crosshair crosshair-a"></div><div class="visual-crosshair crosshair-b"></div>
+        <img src="assets/images/aos-logo.png" alt="" class="hero-emblem">
+        <div class="visual-label label-top">AOS / CORE</div>
+        <div class="visual-label label-bottom">ENGINEERED FOR SOLUTIONS</div>
+        <div class="visual-coordinate">40° 25' N<br>03° 42' W</div>
+      </div>
+      <div class="hero-bottomline"><span>INNOVATION / REPAIR / COMMERCE</span><span>SCROLL TO EXPLORE <b>↓</b></span></div>
+    </section>
+
+    <section class="intro-strip section-shell" id="divisions">
+      <div><span class="section-index">01 — OUR STRUCTURE</span><h2 class="section-heading glitch-text" data-text="Tres divisiones. Una visión.">Tres divisiones. Una visión.</h2></div>
+      <p>Un ecosistema de servicios tecnológicos diseñado para particulares, profesionales y empresas. Selecciona el área que necesitas.</p>
+    </section>
+
+    <section class="division-grid section-shell">
+      <article class="division-card tech-card" id="techs">
+        <div class="card-topline"><span>DIVISION 01 / DIGITAL</span><span class="card-symbol">↗</span></div>
+        <div class="division-icon"><span class="icon-brackets">&lt;/&gt;</span></div>
+        <h2 class="division-title glitch-text" data-text="AOS TECHS">AOS TECHS</h2>
+        <p class="division-lead">Desarrollo tecnológico y soluciones digitales a medida.</p>
+        <div class="service-list">
+          <button class="service-row" data-service="web"><span class="service-number">01</span><span><b>Desarrollo web</b><small>Pide tu página web personalizada.</small></span><i>↗</i></button>
+          <button class="service-row" data-service="app"><span class="service-number">02</span><span><b>Aplicaciones a medida</b><small>Solicita una app para tu negocio.</small></span><i>↗</i></button>
+          <button class="service-row" data-service="software"><span class="service-number">03</span><span><b>Software AOS</b><small>Explora nuestras aplicaciones y proyectos.</small></span><i>↗</i></button>
+          <button class="service-row" data-service="digital"><span class="service-number">04</span><span><b>Soluciones digitales</b><small>Automatización, soporte y tecnología.</small></span><i>↗</i></button>
+        </div>
+        <div class="card-footer"><span>AOS TECHS — DIGITAL SOLUTIONS</span><a href="#contact">INICIAR PROYECTO ↗</a></div>
+      </article>
+
+      <article class="division-card sat-card" id="sat">
+        <div class="card-topline"><span>DIVISION 02 / TECHNICAL SERVICE</span><span class="card-symbol">⌁</span></div>
+        <div class="division-icon"><span class="icon-tools">⌘</span></div>
+        <h2 class="division-title glitch-text" data-text="AOS SAT">AOS SAT</h2>
+        <p class="division-lead">Servicio técnico, diagnóstico y mantenimiento de dispositivos.</p>
+        <div class="service-list">
+          <button class="service-row" data-service="mobile-repair"><span class="service-number">01</span><span><b>Reparación de móviles</b><small>Pantallas, baterías, conectores y diagnóstico.</small></span><i>↗</i></button>
+          <button class="service-row" data-service="computer-repair"><span class="service-number">02</span><span><b>Reparación de ordenadores</b><small>Portátiles, sobremesa y optimización.</small></span><i>↗</i></button>
+          <button class="service-row" data-service="maintenance"><span class="service-number">03</span><span><b>Mantenimientos varios</b><small>Limpieza, puesta a punto y asistencia técnica.</small></span><i>↗</i></button>
+        </div>
+        <div class="card-footer"><span>AOS SAT — REPAIR & MAINTENANCE</span><a href="#contact">SOLICITAR REPARACIÓN ↗</a></div>
+      </article>
+
+      <article class="division-card market-card" id="market">
+        <div class="card-topline"><span>DIVISION 03 / DEVICE COMMERCE</span><span class="card-symbol">◇</span></div>
+        <div class="division-icon"><span class="icon-market">▣</span></div>
+        <h2 class="division-title glitch-text" data-text="AOS MARKET">AOS MARKET</h2>
+        <p class="division-lead">Compra y venta de terminales con una gestión clara y personalizada.</p>
+        <div class="service-list">
+          <button class="service-row" data-service="buy-phone"><span class="service-number">01</span><span><b>Comprar móviles</b><small>Consulta los terminales disponibles.</small></span><i>↗</i></button>
+          <button class="service-row" data-service="sell-phone"><span class="service-number">02</span><span><b>Vender mi móvil</b><small>Cuéntanos qué dispositivo quieres vender.</small></span><i>↗</i></button>
+          <button class="service-row" data-service="valuation"><span class="service-number">03</span><span><b>Solicitar tasación</b><small>Prepara los datos de tu terminal y pide oferta.</small></span><i>↗</i></button>
+        </div>
+        <div class="card-footer"><span>AOS MARKET — BUY & SELL</span><a href="#contact">CONSULTAR TERMINALES ↗</a></div>
+      </article>
+    </section>
+
+    <section class="software-section section-shell" id="software">
+      <div class="section-kicker">AOS TECHS / SOFTWARE CATALOGUE</div>
+      <div class="software-heading">
+        <div><span class="section-index">02 — OUR PRODUCTS</span><h2 class="section-heading glitch-text" data-text="Tecnología propia.">Tecnología propia.</h2></div>
+        <p>Un espacio reservado para las aplicaciones y herramientas desarrolladas por AOS. Iremos incorporando aquí cada lanzamiento.</p>
+      </div>
+      <article class="product-feature">
+        <div class="product-art"><div class="product-window"><div class="window-bar"><i></i><i></i><i></i><span>AOS / SOFTWARE</span></div><div class="window-content"><div class="window-logo">AOS<span>+</span></div><div class="window-lines"><i></i><i></i><i></i><i></i></div><div class="window-chip">BUSINESS MANAGEMENT</div></div></div><span class="art-coordinate">PRODUCT 001 / IN DEVELOPMENT</span></div>
+        <div class="product-info"><span class="product-status"><i></i> CATÁLOGO EN PREPARACIÓN</span><h3>TidiFactu</h3><p>Aplicación de escritorio orientada a facilitar la gestión administrativa y la facturación de pequeños negocios.</p><div class="product-tags"><span>WINDOWS</span><span>DESKTOP APP</span><span>ELECTRON</span></div><span class="coming-soon">PRÓXIMAMENTE EN EL CATÁLOGO AOS</span></div>
+      </article>
+    </section>
+
+    <section class="process-section section-shell">
+      <div><span class="section-index">03 — HOW WE WORK</span><h2 class="section-heading glitch-text" data-text="Directo. Técnico. Transparente.">Directo. Técnico. Transparente.</h2></div>
+      <div class="process-grid">
+        <div><span>01</span><h3>Cuéntanos</h3><p>Explícanos qué necesitas y qué resultado buscas.</p></div>
+        <div><span>02</span><h3>Evaluamos</h3><p>Revisamos tu solicitud y valoramos la solución adecuada.</p></div>
+        <div><span>03</span><h3>Presupuesto</h3><p>Te presentamos la propuesta antes de comenzar.</p></div>
+        <div><span>04</span><h3>Ejecutamos</h3><p>Trabajamos sobre el servicio acordado y sus condiciones.</p></div>
+      </div>
+    </section>
+
+    <section class="contact-section section-shell" id="contact">
+      <div class="contact-copy"><span class="section-index">04 — CONTACT / AOS</span><h2 class="section-heading glitch-text" data-text="¿Qué podemos hacer por ti?">¿Qué podemos hacer por ti?</h2><p>Inicia una solicitud y prepara la información necesaria para contactar con AOS.</p></div>
+      <button class="button button-primary contact-cta" data-service="general">INICIAR SOLICITUD <span>↗</span></button>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <a class="footer-brand" href="#home">AOS<span> BLACKWEB</span></a>
+    <span>TECHNOLOGY · SERVICE · MARKET</span>
+    <span>© <span id="currentYear"></span> AOS CORPORATION. ALL RIGHTS RESERVED.</span>
+  </footer>
+
+  <div class="modal-backdrop" id="requestModal" aria-hidden="true">
+    <section class="request-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar">×</button>
+      <div class="modal-kicker">AOS / REQUEST SYSTEM</div>
+      <h2 id="modalTitle">Iniciar solicitud</h2>
+      <p id="modalDescription">Cuéntanos qué necesitas. Prepararemos un resumen para que puedas enviarlo.</p>
+      <form id="requestForm">
+        <input type="hidden" id="requestType" name="requestType">
+        <label>Nombre <input name="name" autocomplete="name" required placeholder="Tu nombre"></label>
+        <label>Correo electrónico <input name="email" type="email" autocomplete="email" required placeholder="tu@correo.com"></label>
+        <label>Teléfono (opcional) <input name="phone" autocomplete="tel" placeholder="+34 ..."></label>
+        <label id="deviceLabel">Detalles de la solicitud <textarea name="details" rows="4" required placeholder="Describe brevemente lo que necesitas..."></textarea></label>
+        <div class="modal-actions"><button class="button button-primary" type="submit">PREPARAR SOLICITUD <span>↗</span></button><button class="button button-ghost" type="button" id="modalCancel">CANCELAR</button></div>
+      </form>
+      <div class="form-result" id="formResult" hidden>
+        <strong>Solicitud preparada.</strong>
+        <p>Se ha generado un resumen. Puedes copiarlo y enviarlo por tu canal de contacto habitual.</p>
+        <textarea id="requestSummary" rows="7" readonly></textarea>
+        <button class="button button-primary" id="copyRequest" type="button">COPIAR SOLICITUD <span>▣</span></button>
+        <small>Esta web todavía no envía formularios a un servidor. El contenido permanece en tu navegador.</small>
+      </div>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
