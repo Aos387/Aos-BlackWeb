@@ -3,31 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#07090d">
+  <meta name="theme-color" content="#050505">
   <meta name="description" content="AOS BlackWeb: corporación tecnológica y RMA (SAT). Desarrollo digital, reparaciones y compraventa de terminales.">
   <title>AOS BlackWeb — Tecnología, SAT y Market</title>
-  <link rel="icon" type="image/png" href="assets/images/aos-logo.png">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <script>(function(){var t='dark';try{t=localStorage.getItem('aos-theme')||'dark'}catch(e){}document.documentElement.dataset.theme=t==='light'?'light':'dark'})()</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/loader.css">
   <link rel="stylesheet" href="css/animations.css">
+  <noscript><style>.boot-screen{display:none!important}body.is-loading{overflow:auto}</style></noscript>
+  <script src="js/theme.js" defer></script>
+  <script src="js/net.js" defer></script>
   <script src="js/loader.js" defer></script>
-  <script src="js/text-generator.js" defer></script>
+  <script src="js/scramble.js" defer></script>
   <script src="js/main.js" defer></script>
 </head>
 <body class="is-loading">
+  <canvas id="netBg" aria-hidden="true"></canvas>
   <div class="boot-screen" id="bootScreen" aria-label="Cargando AOS BlackWeb">
-    <div class="boot-grid"></div>
-    <div class="boot-center">
+    <button class="theme-toggle boot-theme" type="button" data-theme-toggle aria-label="Cambiar a modo claro"><span class="theme-icon">☀</span><span class="theme-label">LIGHT</span></button>
+    <div class="boot-center" id="bootCenter">
       <div class="boot-logo-wrap">
-        <img src="assets/images/aos-logo.png" class="boot-logo" alt="Logotipo AOS">
+        <canvas class="boot-canvas" id="bootCanvas" width="630" height="644" role="img" aria-label="Logotipo AOS"></canvas>
       </div>
       <div class="boot-brand">Aos<span>Techs</span></div>
       <div class="boot-status" id="bootStatus">INITIALIZING CORPORATE SYSTEMS</div>
-      <div class="boot-progress"><span id="bootProgress"></span></div>
-      <div class="boot-meta"><span id="bootPercent">00%</span><span> AOS / SYSTEM BOOT</span></div>
+      <button class="button button-primary boot-enter" id="bootEnter" type="button">VER <span>→</span></button>
     </div>
     <div class="boot-corner boot-corner-left">AOS BLACKWEB <span>BUILD 01.00</span></div>
     <div class="boot-corner boot-corner-right">SECURE DIGITAL ENVIRONMENT</div>
@@ -44,6 +48,7 @@
       <a href="#market">AOS Market</a>
     </nav>
     <a class="header-contact" href="#contact">CONTACTO <span>↗</span></a>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar a modo claro"><span class="theme-icon">☀</span><span class="theme-label">LIGHT</span></button>
     <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
   </header>
 
@@ -60,11 +65,7 @@
       </div>
       <div class="hero-visual" aria-hidden="true">
         <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
-        <div class="visual-crosshair crosshair-a"></div><div class="visual-crosshair crosshair-b"></div>
         <img src="assets/images/aos-logo.png" alt="" class="hero-emblem">
-        <div class="visual-label label-top">AOS / CORE</div>
-        <div class="visual-label label-bottom">ENGINEERED FOR SOLUTIONS</div>
-        <div class="visual-coordinate">40° 25' N<br>03° 42' W</div>
       </div>
       <div class="hero-bottomline"><span>INNOVATION / REPAIR / COMMERCE</span><span>SCROLL TO EXPLORE <b>↓</b></span></div>
     </section>
