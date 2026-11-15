@@ -1,1 +1,9 @@
-[data-reveal]{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}[data-reveal].revealed{opacity:1;transform:none}.glitch-text{position:relative}.glitch-text.is-generating{color:#dceeff;text-shadow:0 0 16px rgba(22,140,255,.28)}.glitch-text.is-generating:after{content:"";display:inline-block;width:7px;height:1em;background:#168cff;margin-left:5px;vertical-align:-.12em;animation:cursor-blink .7s steps(2,start) infinite}@keyframes cursor-blink{to{visibility:hidden}}.service-row:focus-visible,.button:focus-visible,a:focus-visible,button:focus-visible{outline:2px solid #168cff;outline-offset:4px}
+[data-reveal]{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}[data-reveal].revealed{opacity:1;transform:none}
+.service-row:focus-visible,.button:focus-visible,a:focus-visible,button:focus-visible{outline:2px solid var(--blue);outline-offset:4px}
+/* entrada de la web al pulsar VER */
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.site-ready .hero-copy>*{animation:rise .8s cubic-bezier(.2,.8,.2,1) both}
+.site-ready .hero-copy>:nth-child(1){animation-delay:.35s}.site-ready .hero-copy>:nth-child(2){animation-delay:.45s}
+.site-ready .hero-copy>:nth-child(3){animation-delay:.6s}.site-ready .hero-copy>:nth-child(4){animation-delay:.75s}
+.site-ready .hero-visual{animation:rise 1s cubic-bezier(.2,.8,.2,1) .5s both}
+.site-ready .hero-bottomline{animation:rise .9s cubic-bezier(.2,.8,.2,1) .9s both}
