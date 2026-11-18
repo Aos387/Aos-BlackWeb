@@ -6,7 +6,7 @@
   const rnd = () => SYMS[(Math.random() * SYMS.length) | 0];
   const REAL = /[\p{L}\p{N}]/u;                       // solo se "mezclan" letras y números
   const ROOTS = '#siteHeader,#mainContent,.site-footer';
-  const SKIP = 'script,style,noscript,textarea,input,svg,#requestModal,.hero-emblem';
+  const SKIP = 'script,style,noscript,textarea,input,svg,#requestModal,.hero-emblem,[data-noscramble]';
   const HOVER = 'a,button,.service-row,.division-title,.section-heading,.hero-title,.process-grid>div,.product-info h3,.product-tags span,.product-window';
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
