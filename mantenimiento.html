@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="Mantenimiento de ordenadores, videoconsolas y móviles: limpieza, pasta térmica, optimización y más. Pide tu presupuesto.">
+  <title>Mantenimiento de ordenadores, consolas y móviles | AOS SAT</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <script>(function(){var t='dark';try{t=localStorage.getItem('aos-theme')||'dark'}catch(e){}document.documentElement.dataset.theme=t==='light'?'light':'dark'})()</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <script src="js/theme.js" defer></script>
+  <script src="js/net.js" defer></script>
+  <script src="js/modal.js" defer></script>
+  <script src="js/scramble.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script>window.AOS_WIZARD = {
+  "modalType": "maintenance-quote",
+  "stepLabels": [
+    "Equipo",
+    "Servicio",
+    "Presupuesto"
+  ],
+  "s1": {
+    "title": "¿Qué equipo quieres mantener?",
+    "sub": "Elige el tipo de equipo. El mantenimiento se presupuesta a medida."
+  },
+  "s2": {
+    "title": "¿Qué mantenimiento necesitas?",
+    "sub": "Marca lo que te interesa. Puedes elegir varias opciones.",
+    "cta": "CONTINUAR"
+  },
+  "s3": {
+    "title": "Tu presupuesto, a medida",
+    "sub": "Revisa el resumen. Preparamos un presupuesto personalizado según tu equipo.",
+    "text": "Envíanos la solicitud y te respondemos con un presupuesto ajustado a lo que necesitas.",
+    "cta": "PIDE TU PRESUPUESTO"
+  },
+  "labels": {
+    "type": "Equipo",
+    "opts": "Servicios"
+  },
+  "prefillHeader": "Mantenimiento",
+  "modelLabel": "MARCA Y MODELO (OPCIONAL)",
+  "modelPlaceholder": "p. ej. PS5 Slim, portátil Asus, iPhone 14…",
+  "types": [
+    {
+      "id": "computers",
+      "name": "Ordenadores",
+      "desc": "Portátil, torre o Mac",
+      "options": [
+        [
+          "Limpieza interna",
+          "Polvo, ventiladores y disipador"
+        ],
+        [
+          "Cambio de pasta térmica",
+          "Menos temperatura y menos ruido"
+        ],
+        [
+          "Optimización y puesta a punto",
+          "Arranque, programas y sistema"
+        ],
+        [
+          "Ampliación de RAM o SSD",
+          "Más rapidez y más espacio"
+        ],
+        [
+          "Seguridad y antivirus",
+          "Revisión, limpieza y protección"
+        ],
+        [
+          "Copia de seguridad y migración",
+          "Salva o pasa tus datos a otro equipo"
+        ],
+        [
+          "Mantenimiento completo",
+          "Pack: limpieza, pasta y optimización"
+        ]
+      ]
+    },
+    {
+      "id": "consoles",
+      "name": "Videoconsolas",
+      "desc": "PlayStation, Xbox, Nintendo…",
+      "chips": {
+        "label": "¿QUÉ CONSOLA ES? (OPCIONAL)",
+        "short": "Consola",
+        "choices": [
+          "PS5",
+          "PS4",
+          "Xbox Series X|S",
+          "Xbox One",
+          "Nintendo Switch",
+          "Otra"
+        ]
+      },
+      "modelLabel": "MODELO O DETALLES (OPCIONAL)",
+      "modelShort": "Detalles",
+      "modelPlaceholder": "p. ej. PS5 Slim con ruido al jugar",
+      "options": [
+        [
+          "Limpieza interna",
+          "Ventilador y disipador sin polvo"
+        ],
+        [
+          "Pasta térmica o metal líquido",
+          "Menos temperatura y menos ruido"
+        ],
+        [
+          "Cambio de pads térmicos",
+          "Recambio de almohadillas térmicas"
+        ],
+        [
+          "Ventilador ruidoso",
+          "Revisión o sustitución"
+        ],
+        [
+          "Limpieza de mandos y puertos",
+          "Conectores, botones y sticks"
+        ],
+        [
+          "Revisión general y actualización",
+          "Comprobación completa y firmware"
+        ],
+        [
+          "Mantenimiento completo",
+          "Pack: limpieza, pasta y revisión"
+        ]
+      ]
+    },
+    {
+      "id": "phones",
+      "name": "Móviles",
+      "desc": "Android o iPhone",
+      "modelPlaceholder": "p. ej. Redmi Note 13, iPhone 14…",
+      "options": [
+        [
+          "Limpieza de puertos y altavoces",
+          "Carga, micrófono o altavoz sucios"
+        ],
+        [
+          "Optimización",
+          "Espacio, ajustes y rendimiento"
+        ],
+        [
+          "Revisión de batería",
+          "Estado y consejos de carga"
+        ],
+        [
+          "Copia y traspaso de datos",
+          "Pasa todo a un móvil nuevo"
+        ],
+        [
+          "Revisión de seguridad",
+          "Cuentas, privacidad y antivirus"
+        ],
+        [
+          "Instalación de protector y funda",
+          "Cristal templado bien colocado"
+        ]
+      ]
+    }
+  ]
+};</script>
+  <script src="js/quote-wizard.js" defer></script>
+</head>
+<body class="site-ready subpage">
+  <canvas id="netBg" aria-hidden="true"></canvas>
+  <header class="site-header" id="siteHeader">
+    <a class="brand-lockup" href="index.html" aria-label="AOS BlackWeb, inicio">
+      <span class="brand-mark"><img src="assets/images/aos-logo.png" alt=""></span>
+      <span class="brand-name">AOS <b>BlackWeb</b><small>TECHNOLOGY · SERVICE · MARKET</small></span>
+    </a>
+    <nav class="top-nav" aria-label="Navegación principal">
+      <a href="aos-techs.html">AOS Techs</a>
+      <a href="index.html#sat">AOS SAT</a>
+      <a href="index.html#market">AOS Market</a>
+      <a href="index.html#software">Software</a>
+      <a class="nav-contact" href="index.html#contact">Contacto</a>
+    </nav>
+    <a class="header-contact" href="index.html#contact">CONTACTO <span>↗</span></a>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar a modo claro"><span class="theme-icon">☀</span><span class="theme-label">LIGHT</span></button>
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  </header>
+
+  <main id="mainContent">
+    <section class="page-hero section-shell">
+      <div class="crumb"><a href="index.html#sat">← AOS SAT</a> / MANTENIMIENTO</div>
+      <h1 class="page-title glitch-text" data-text="Mantenimiento.">Mantenimiento.</h1>
+      <p class="page-lead">Ordenadores, videoconsolas y móviles a punto. Elige tu equipo y lo que necesita; te preparamos un presupuesto a medida.</p>
+    </section>
+    <section class="wizard section-shell" id="wizard" data-noscramble aria-live="polite"></section>
+    <noscript><p class="page-lead">Activa JavaScript para usar el asistente, o escríbenos a errroraos404@gmail.com.</p></noscript>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <a class="footer-brand" href="index.html">AOS<span> BLACKWEB</span></a>
+    <span>TECHNOLOGY · SERVICE · MARKET</span>
+    <span>© <span id="currentYear"></span> AOS CORPORATION. ALL RIGHTS RESERVED.</span>
+    <a class="footer-github" href="https://github.com/aos387" target="_blank" rel="noopener">GITHUB / AOS387 <span>↗</span></a>
+  </footer>
+</body>
+</html>

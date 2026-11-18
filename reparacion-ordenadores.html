@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="Reparamos portátiles, ordenadores de torre y Mac. Cuéntanos la avería y te preparamos un presupuesto personalizado.">
+  <title>Reparación de ordenadores — portátil, torre y Mac | AOS SAT</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <script>(function(){var t='dark';try{t=localStorage.getItem('aos-theme')||'dark'}catch(e){}document.documentElement.dataset.theme=t==='light'?'light':'dark'})()</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <script src="js/theme.js" defer></script>
+  <script src="js/net.js" defer></script>
+  <script src="js/modal.js" defer></script>
+  <script src="js/scramble.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script>window.AOS_WIZARD = {
+  "modalType": "computer-quote",
+  "stepLabels": [
+    "Equipo",
+    "Problema",
+    "Presupuesto"
+  ],
+  "s1": {
+    "title": "¿Qué equipo quieres reparar?",
+    "sub": "Elige el tipo de equipo. Cada reparación se presupuesta a medida."
+  },
+  "s2": {
+    "title": "¿Qué le pasa?",
+    "sub": "Marca todo lo que aplique. Puedes elegir varias opciones.",
+    "cta": "CONTINUAR"
+  },
+  "s3": {
+    "title": "Tu presupuesto, a medida",
+    "sub": "Revisa el resumen. Cada equipo y cada avería es distinta, así que preparamos un presupuesto personalizado.",
+    "text": "Envíanos la solicitud y te respondemos con un presupuesto ajustado a tu equipo.",
+    "cta": "PIDE TU PRESUPUESTO"
+  },
+  "labels": {
+    "type": "Equipo",
+    "opts": "Problemas"
+  },
+  "prefillHeader": "Reparación de ordenador",
+  "modelLabel": "MARCA Y MODELO (OPCIONAL)",
+  "modelPlaceholder": "p. ej. Lenovo IdeaPad 3, HP Pavilion…",
+  "types": [
+    {
+      "id": "laptop",
+      "name": "Portátil",
+      "desc": "Windows o Linux",
+      "options": [
+        [
+          "No enciende o no carga",
+          "Pantalla negra, sin luces o no arranca"
+        ],
+        [
+          "Pantalla rota o con fallos",
+          "Cristal roto, líneas o manchas"
+        ],
+        [
+          "Va muy lento o se cuelga",
+          "Tarda en arrancar o se congela"
+        ],
+        [
+          "Se calienta o hace ruido",
+          "Ventilador ruidoso o apagados por calor"
+        ],
+        [
+          "Batería o cargador",
+          "Dura poco o no carga"
+        ],
+        [
+          "Teclado o touchpad",
+          "Teclas que fallan o no responde"
+        ],
+        [
+          "Virus o sistema",
+          "Formateo, Windows o malware"
+        ],
+        [
+          "Disco, datos o ampliación",
+          "Recuperar datos, SSD o más RAM"
+        ]
+      ]
+    },
+    {
+      "id": "desktop",
+      "name": "Torre o sobremesa",
+      "desc": "PC de torre, mini PC o todo en uno",
+      "modelPlaceholder": "p. ej. torre i5 con RTX 3060, mini PC…",
+      "options": [
+        [
+          "No enciende o se reinicia",
+          "Sin señales de vida o reinicios"
+        ],
+        [
+          "Sin imagen",
+          "Pantalla negra o sin señal"
+        ],
+        [
+          "Va lento o se cuelga",
+          "Tarda o se congela"
+        ],
+        [
+          "Ruido o temperaturas altas",
+          "Ventiladores, apagados por calor"
+        ],
+        [
+          "Fuente o placa base",
+          "Posible fallo de alimentación o placa"
+        ],
+        [
+          "Tarjeta gráfica",
+          "Artefactos, sin señal o caídas de rendimiento"
+        ],
+        [
+          "Disco, datos o ampliación",
+          "Recuperar datos, SSD o más RAM"
+        ],
+        [
+          "Virus o sistema",
+          "Formateo, Windows o malware"
+        ]
+      ]
+    },
+    {
+      "id": "mac",
+      "name": "Mac",
+      "desc": "MacBook, iMac o Mac mini",
+      "modelPlaceholder": "p. ej. MacBook Air M1, iMac 2019…",
+      "options": [
+        [
+          "No enciende o no carga",
+          "Sin señales de vida o no carga"
+        ],
+        [
+          "Pantalla",
+          "Rota, con líneas o manchas"
+        ],
+        [
+          "Batería",
+          "Dura poco o está hinchada"
+        ],
+        [
+          "Va lento o sin espacio",
+          "Almacenamiento lleno o muy lento"
+        ],
+        [
+          "Teclado o trackpad",
+          "Teclas que fallan o no responde"
+        ],
+        [
+          "Mojado o golpe",
+          "Líquido o caída"
+        ],
+        [
+          "macOS o software",
+          "Reinstalar o actualizar"
+        ],
+        [
+          "Recuperar datos",
+          "Disco o archivos inaccesibles"
+        ]
+      ]
+    }
+  ]
+};</script>
+  <script src="js/quote-wizard.js" defer></script>
+</head>
+<body class="site-ready subpage">
+  <canvas id="netBg" aria-hidden="true"></canvas>
+  <header class="site-header" id="siteHeader">
+    <a class="brand-lockup" href="index.html" aria-label="AOS BlackWeb, inicio">
+      <span class="brand-mark"><img src="assets/images/aos-logo.png" alt=""></span>
+      <span class="brand-name">AOS <b>BlackWeb</b><small>TECHNOLOGY · SERVICE · MARKET</small></span>
+    </a>
+    <nav class="top-nav" aria-label="Navegación principal">
+      <a href="aos-techs.html">AOS Techs</a>
+      <a href="index.html#sat">AOS SAT</a>
+      <a href="index.html#market">AOS Market</a>
+      <a href="index.html#software">Software</a>
+      <a class="nav-contact" href="index.html#contact">Contacto</a>
+    </nav>
+    <a class="header-contact" href="index.html#contact">CONTACTO <span>↗</span></a>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar a modo claro"><span class="theme-icon">☀</span><span class="theme-label">LIGHT</span></button>
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  </header>
+
+  <main id="mainContent">
+    <section class="page-hero section-shell">
+      <div class="crumb"><a href="index.html#sat">← AOS SAT</a> / REPARACIÓN DE ORDENADORES</div>
+      <h1 class="page-title glitch-text" data-text="Reparación de ordenadores.">Reparación de ordenadores.</h1>
+      <p class="page-lead">Portátil, torre o Mac. Cuéntanos qué le pasa y te preparamos un presupuesto personalizado: cada equipo y cada avería es distinta.</p>
+    </section>
+    <section class="wizard section-shell" id="wizard" data-noscramble aria-live="polite"></section>
+    <noscript><p class="page-lead">Activa JavaScript para usar el asistente, o escríbenos a errroraos404@gmail.com.</p></noscript>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <a class="footer-brand" href="index.html">AOS<span> BLACKWEB</span></a>
+    <span>TECHNOLOGY · SERVICE · MARKET</span>
+    <span>© <span id="currentYear"></span> AOS CORPORATION. ALL RIGHTS RESERVED.</span>
+    <a class="footer-github" href="https://github.com/aos387" target="_blank" rel="noopener">GITHUB / AOS387 <span>↗</span></a>
+  </footer>
+</body>
+</html>
