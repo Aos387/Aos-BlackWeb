@@ -26,6 +26,7 @@
       <div class="form-result" id="formResult" hidden>
         <strong id="resultTitle">Solicitud enviada.</strong>
         <p id="resultText"></p>
+        <p class="form-hint" id="resultDetail" hidden></p>
         <div class="modal-actions">
           <a class="button button-primary" id="resultWa" href="#" target="_blank" rel="noopener">ABRIR WHATSAPP <span>↗</span></a>
           <a class="button button-ghost" id="resultMail" href="#" hidden>ENVIAR POR CORREO <span>↗</span></a>

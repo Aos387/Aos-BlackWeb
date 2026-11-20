@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="Desarrollo web, aplicaciones a medida y soluciones digitales con precios orientativos claros. Pide tu presupuesto.">
+  
+  <title>AOS Techs — desarrollo web, aplicaciones y soluciones digitales</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <script>(function(){var t='dark';try{t=localStorage.getItem('aos-theme')||'dark'}catch(e){}document.documentElement.dataset.theme=t==='light'?'light':'dark'})()</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <script src="js/theme.js" defer></script>
+  <script src="js/net.js" defer></script>
+  <script src="js/modal.js" defer></script>
+  <script src="js/scramble.js" defer></script>
+  <script src="js/config.js" defer></script>
+  <script src="js/send.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body class="site-ready subpage">
+  <canvas id="netBg" aria-hidden="true"></canvas>
+  <header class="site-header" id="siteHeader">
+    <a class="brand-lockup" href="index.html" aria-label="AOS BlackWeb, inicio">
+      <span class="brand-mark"><img src="assets/images/aos-logo.png" alt=""></span>
+      <span class="brand-name">AOS <b>BlackWeb</b><small>TECHNOLOGY · SERVICE · MARKET</small></span>
+    </a>
+    <nav class="top-nav" aria-label="Navegación principal">
+      <a href="aos-techs.html">AOS Techs</a>
+      <a href="index.html#sat">AOS SAT</a>
+      <a href="index.html#market">AOS Market</a>
+      <a href="index.html#software">Software</a>
+      <a class="nav-contact" href="index.html#contact">Contacto</a>
+    </nav>
+    <a class="header-contact" href="index.html#contact">CONTACTO <span>↗</span></a>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar a modo claro"><span class="theme-icon">☀</span><span class="theme-label">LIGHT</span></button>
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  </header>
+
+  <main id="mainContent">
+    <section class="page-hero section-shell">
+      <div class="crumb"><a href="index.html#techs">← INICIO</a> / AOS TECHS</div>
+      <h1 class="page-title glitch-text" data-text="Tecnología a tu medida.">Tecnología a tu medida.</h1>
+      <p class="page-lead">Webs, aplicaciones y soluciones digitales con precios de partida claros. Elige lo que necesitas y pide tu presupuesto sin compromiso.</p>
+    </section>
+    <section class="section-shell" style="padding-bottom:0">
+      <div class="subnav" aria-label="Secciones"><a href="#web">DESARROLLO WEB</a><a href="#apps">APLICACIONES A MEDIDA</a><a href="#digital">SOLUCIONES DIGITALES</a></div>
+    </section>
+    <section class="section-shell techs-section" id="web">
+      <div class="techs-head"><div><span class="section-index">01 — DESARROLLO WEB</span><h2 class="section-heading">Tu web, bien hecha.</h2></div><p>Tres puntos de partida claros. Si tu proyecto está entre dos, lo ajustamos y te damos presupuesto cerrado.</p></div>
+      <div class="price-grid" data-noscramble><article class="price-card"><span class="pc-kicker">01 / LANDING</span><h3>Página de aterrizaje</h3>
+          <div class="pc-price"><em>DESDE</em><b>290 €</b><span> + IVA</span></div>
+          <p>Una sola página, directa y pensada para una acción: que te llamen, te escriban o reserven.</p><ul><li>Diseño adaptado a móvil</li><li>Formulario de contacto y WhatsApp</li><li>Publicación y puesta en marcha</li></ul>
+          <button class="button button-primary" type="button" data-service="techs-quote" data-prefill="Interés: Landing (desde 290 € + IVA)&#10;&#10;Cuéntanos tu proyecto: ">PEDIR PRESUPUESTO <span>→</span></button></article><article class="price-card"><span class="pc-kicker">02 / CORPORATIVA</span><h3>Web corporativa</h3>
+          <div class="pc-price"><em>DESDE</em><b>690 €</b><span> + IVA</span></div>
+          <p>Tu negocio completo en la red: quién eres, qué ofreces y cómo contactarte.</p><ul><li>Hasta 5 secciones a medida</li><li>Formulario y WhatsApp integrados</li><li>SEO básico y avisos legales</li></ul>
+          <button class="button button-primary" type="button" data-service="techs-quote" data-prefill="Interés: Web corporativa (desde 690 € + IVA)&#10;&#10;Cuéntanos tu proyecto: ">PEDIR PRESUPUESTO <span>→</span></button></article><article class="price-card"><span class="pc-kicker">03 / E-COMMERCE</span><h3>Tienda online</h3>
+          <div class="pc-price"><em>DESDE</em><b>1.290 €</b><span> + IVA</span></div>
+          <p>Catálogo, carrito y pago para que vendas por internet desde el primer día.</p><ul><li>Catálogo de productos</li><li>Carrito y pasarela de pago</li><li>Gestión de pedidos y avisos legales</li></ul>
+          <button class="button button-primary" type="button" data-service="techs-quote" data-prefill="Interés: Tienda online (desde 1.290 € + IVA)&#10;&#10;Cuéntanos tu proyecto: ">PEDIR PRESUPUESTO <span>→</span></button></article></div>
+    </section>
+    <section class="section-shell techs-section" id="apps">
+      <div class="techs-head"><div><span class="section-index">02 — APLICACIONES A MEDIDA</span><h2 class="section-heading">Software hecho para ti.</h2></div><p>Desde pequeñas herramientas internas hasta aplicaciones completas. El precio depende del alcance: por eso empezamos con una conversación.</p></div>
+      <div class="price-grid two" data-noscramble><article class="price-card"><span class="pc-kicker">APLICACIONES</span><h3>Aplicación a medida</h3>
+          <div class="pc-price"><em>DESDE</em><b>1.500 €</b><span> + IVA · según alcance</span></div>
+          <p>Software hecho a la medida de tu proceso: se acabó adaptar tu negocio a un programa genérico. Ejemplo real: TidiFactu, nuestra app de facturación y gestión, ya disponible en Microsoft Store.</p><ul><li>Aplicaciones de escritorio para Windows</li><li>Herramientas web internas</li><li>Facturación, inventario, citas y gestión</li><li>Soporte y evolución después de la entrega</li></ul>
+          <button class="button button-primary" type="button" data-service="techs-quote" data-prefill="Interés: Aplicación a medida (desde 1.500 € + IVA · según alcance)&#10;&#10;Cuéntanos tu proyecto: ">PEDIR PRESUPUESTO <span>→</span></button></article><article class="price-card"><span class="pc-kicker">SOFTWARE AOS</span><h3>TidiFactu</h3><p>Aplicación de escritorio para Windows para facturación y gestión diaria. Ya disponible en la Microsoft Store.</p><ul><li>Facturación simplificada</li><li>Gestión organizada de tu negocio</li><li>Instalación directa desde la Store</li></ul><a class="button button-ghost" href="index.html#software">VER TIDIFACTU <span>→</span></a></article></div>
+    </section>
+    <section class="section-shell techs-section" id="digital">
+      <div class="techs-head"><div><span class="section-index">03 — SOLUCIONES DIGITALES</span><h2 class="section-heading">Menos tareas, más negocio.</h2></div><p>Automatiza lo repetitivo, mantén tu web al día y ten a alguien de confianza para tu tecnología.</p></div>
+      <div class="price-grid" data-noscramble><article class="price-card"><span class="pc-kicker">AUTOMATIZACIÓN</span><h3>Automatización</h3>
+          <div class="pc-price"><em>DESDE</em><b>250 €</b><span> + IVA</span></div>
+          <p>Conectamos tus herramientas y quitamos tareas repetitivas: avisos, informes y procesos que se hacen solos.</p><ul><li>Integración entre aplicaciones</li><li>Informes y avisos automáticos</li><li>Menos tiempo en tareas manuales</li></ul>
+          <button class="button button-primary" type="button" data-service="techs-quote" data-prefill="Interés: Automatización (desde 250 € + IVA)&#10;&#10;Cuéntanos tu proyecto: ">PEDIR PRESUPUESTO <span>→</span></button></article><article class="price-card"><span class="pc-kicker">MANTENIMIENTO WEB</span><h3>Mantenimiento de tu web</h3>
+          <div class="pc-price"><em>DESDE</em><b>29 €</b><span>/mes + IVA</span></div>
+          <p>Tu web siempre al día, segura y funcionando mientras tú te dedicas a tu negocio.</p><ul><li>Actualizaciones y copias de seguridad</li><li>Cambios de contenido</li><li>Revisión de rendimiento y seguridad</li></ul>
+          <button class="button button-primary" type="button" data-service="techs-quote" data-prefill="Interés: Mantenimiento web (desde 29 €/mes + IVA)&#10;&#10;Cuéntanos tu proyecto: ">PEDIR PRESUPUESTO <span>→</span></button></article><article class="price-card"><span class="pc-kicker">SOPORTE</span><h3>Soporte técnico</h3>
+          <div class="pc-price"><em>DESDE</em><b>35 €</b><span>/hora + IVA</span></div>
+          <p>Ayuda puntual con tu tecnología: incidencias, dudas, configuración o asesoramiento.</p><ul><li>Resolución de incidencias</li><li>Asesoramiento tecnológico</li><li>Configuración de equipos y servicios</li></ul>
+          <button class="button button-primary" type="button" data-service="techs-quote" data-prefill="Interés: Soporte técnico (desde 35 €/hora + IVA)&#10;&#10;Cuéntanos tu proyecto: ">PEDIR PRESUPUESTO <span>→</span></button></article></div>
+      <p class="fine">Precios orientativos «desde», IVA no incluido. El presupuesto final depende del alcance y se confirma siempre por escrito antes de empezar.</p>
+    </section>
+    <section class="section-shell">
+      <div class="cta-band"><div><h2>¿Tu proyecto no encaja en ninguno?</h2><p>Cuéntanos qué necesitas y te preparamos una propuesta a medida.</p></div>
+      <button class="button button-primary" type="button" data-service="techs-quote" data-prefill="Proyecto a medida&#10;&#10;Cuéntanos tu proyecto: ">PIDE TU PRESUPUESTO <span>→</span></button></div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <a class="footer-brand" href="index.html">AOS<span> BLACKWEB</span></a>
+    <span>TECHNOLOGY · SERVICE · MARKET</span>
+    <span>© <span id="currentYear"></span> AOS CORPORATION. ALL RIGHTS RESERVED.</span>
+    <a class="footer-github" href="https://github.com/aos387" target="_blank" rel="noopener">GITHUB / AOS387 <span>↗</span></a>
+  </footer>
+</body>
+</html>

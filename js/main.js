@@ -1,8 +1,8 @@
 (() => {
   // ---- Destino de las solicitudes
-  const CONTACT_EMAIL = 'errroraos404@gmail.com';     // el formulario llega a este correo (vía FormSubmit)
-  const WHATSAPP_NUMBER = '34632180091';              // WhatsApp +34 632 18 00 91
-  const ENDPOINT = 'https://formsubmit.co/ajax/' + CONTACT_EMAIL;
+  const CFG = window.AOS_CONFIG || {};                // se edita en js/config.js
+  const CONTACT_EMAIL = CFG.email || 'errroraos404@gmail.com';
+  const WHATSAPP_NUMBER = CFG.whatsapp || '34632180091';
   const modal = document.getElementById('requestModal');
   const form = document.getElementById('requestForm');
   const result = document.getElementById('formResult');
@@ -77,6 +77,7 @@
   const waBtn = document.getElementById('sendWa');
   const resultTitle = document.getElementById('resultTitle');
   const resultText = document.getElementById('resultText');
+  const resultDetail = document.getElementById('resultDetail');
   const resultWa = document.getElementById('resultWa');
   const resultMail = document.getElementById('resultMail');
   const sendLabel = sendBtn.innerHTML;
@@ -111,10 +112,14 @@
   const waLink = f => 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(messageText(f));
   const mailLink = f => 'mailto:' + CONTACT_EMAIL + '?subject=' + encodeURIComponent('[AOS BlackWeb] ' + f.service + ' — ' + f.name) + '&body=' + encodeURIComponent(messageText(f));
 
-  function showResult(kind, f) {
+  function showResult(kind, f, info) {
     form.hidden = true; result.hidden = false;
     resultWa.href = waLink(f);
     resultMail.hidden = kind !== 'error';
+    if (resultDetail) {                                      // motivo técnico (solo cuando falla el envío)
+      resultDetail.hidden = !(kind === 'error' && info && info.tried);
+      if (!resultDetail.hidden) resultDetail.textContent = 'Detalle técnico: ' + info.tried.map(t => t.provider + ' → ' + t.detail).join(' · ');
+    }
     if (kind === 'ok') {
       resultTitle.textContent = 'Solicitud enviada.';
       resultText.textContent = 'Hemos recibido tu solicitud y te responderemos lo antes posible. Si es urgente, también puedes escribirnos por WhatsApp.';
@@ -135,24 +140,11 @@
     const f = fields();
     if (f.honey) { showResult('ok', f); return; }          // anti-bots: no se envía nada
     setBusy(true);
-    const ctrl = new AbortController();
-    const timer = setTimeout(() => ctrl.abort(), 15000);
-    try {
-      const payload = {
-        _subject: '[AOS BlackWeb] ' + f.service + ' — ' + f.name,
-        _template: 'table', _captcha: 'false',
-        Nombre: f.name, Servicio: f.service, Telefono: f.phone || 'No indicado', Mensaje: f.details, Pagina: location.href
-      };
-      if (f.email) payload.email = f.email;                // FormSubmit lo usa como "responder a"
-      const res = await fetch(ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(payload), signal: ctrl.signal });
-      const data = await res.json().catch(() => ({}));
-      showResult(res.ok && (data.success === true || data.success === 'true') ? 'ok' : 'error', f);
-    } catch {
-      showResult('error', f);
-    } finally {
-      clearTimeout(timer);
-      setBusy(false);
-    }
+    let r;
+    try { r = window.AosSend ? await window.AosSend.send(f) : { ok: false, tried: [{ provider: 'web', detail: 'falta js/send.js' }] }; }
+    catch (e) { r = { ok: false, tried: [{ provider: 'web', detail: String(e) }] }; }
+    showResult(r.ok ? 'ok' : 'error', f, r);
+    setBusy(false);
   });
 
   waBtn.addEventListener('click', () => {
